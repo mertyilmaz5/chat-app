@@ -25,7 +25,7 @@ Projede aşağıdaki ana dosyalar ve klasörler bulunmaktadır:
   - `utils/`: Yardımcı işlevler ve sabit veriler
   - `App.js`: Ana uygulama bileşeni
   - `index.js`: Uygulamanın başlangıç noktası
-- `server.js`: Backend tarafı, Socket.io ve API yönetimi
+- `backend/`: Backend tarafı, Socket.io ve API yönetimi
 
 ## Başlangıç
 
@@ -39,25 +39,23 @@ Projede aşağıdaki ana dosyalar ve klasörler bulunmaktadır:
 3. Bağımlılıkları yükleyin (Frontend ve Backend için ayrı ayrı):
 
    ```bash
-   cd chat-app
+   cd backend
    npm install
    ```
 
    ```bash
-   cd backend
    npm install
    ```
 
 4. Projeyi başlatın:
 
    ```bash
-   cd chat-app
-   npm start
+   cd backend
+   node server.js
    ```
 
    ```bash
-   cd backend
-   node server.js
+   npm start
    ```
 
 5. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görebilirsiniz.
