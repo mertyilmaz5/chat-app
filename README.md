@@ -1,4 +1,4 @@
-````markdown
+
 # Chat Uygulaması
 
 Bu proje, ReactJS ve Socket.io kullanarak geliştirilmiş basit bir chat uygulamasıdır. Kullanıcılar farklı gruplarda mesajlaşabilir ve online kullanıcıları görebilirler.
@@ -47,7 +47,7 @@ Projede aşağıdaki ana dosyalar ve klasörler bulunmaktadır:
    npm install
    ```
 
-4. Projeyi başlatın:
+4. Projeyi başlatın (Frontend ve Backend için ayrı ayrı):
 
    ```bash
    cd backend
@@ -78,4 +78,4 @@ Katkıda bulunmak veya sorun bildirmek için lütfen [issues](https://github.com
 ---
 
 Uygulama geliştirme süreci hakkında detaylı bilgi almak için lütfen projenin kodlarına ve `server.js` dosyasına göz atın. Herhangi bir sorunuz veya geri bildiriminiz varsa lütfen bana bildirin!
-````
+
