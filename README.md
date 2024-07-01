@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+````markdown
+# Chat Uygulaması
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, ReactJS ve Socket.io kullanarak geliştirilmiş basit bir chat uygulamasıdır. Kullanıcılar farklı gruplarda mesajlaşabilir ve online kullanıcıları görebilirler.
 
-## Available Scripts
+## Teknolojiler
 
-In the project directory, you can run:
+- ReactJS
+- Socket.io
+- Axios (API ile iletişim için)
+- CSS (stillemek için)
 
-### `npm start`
+## Dosya Yapısı
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projede aşağıdaki ana dosyalar ve klasörler bulunmaktadır:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `public/`: Statik dosyalar ve index.html
+- `src/`: Proje kaynak kodları
+  - `components/`: React bileşenleri
+    - `Login.js`: Kullanıcı giriş ekranı
+    - `Chat.js`: Chat ekranı ve mesaj yönetimi
+  - `styles/`: CSS dosyaları
+    - `Login.css`: Kullanıcı giriş ekranı stilleri
+    - `Chat.css`: Chat ekranı stilleri
+  - `utils/`: Yardımcı işlevler ve sabit veriler
+  - `App.js`: Ana uygulama bileşeni
+  - `index.js`: Uygulamanın başlangıç noktası
+- `server.js`: Backend tarafı, Socket.io ve API yönetimi
 
-### `npm test`
+## Başlangıç
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Gereksinimler**: Node.js ve npm (veya yarn) yüklü olmalıdır.
+2. Projeyi bilgisayarınıza klonlayın:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/mertyilmaz5/rt-chat-app.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Bağımlılıkları yükleyin (Frontend ve Backend için ayrı ayrı):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd chat-app
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd backend
+   npm install
+   ```
 
-### `npm run eject`
+4. Projeyi başlatın:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd chat-app
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd backend
+   node server.js
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görebilirsiniz.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Kullanım
 
-## Learn More
+- **Giriş Ekranı**: Kullanıcı adı ve avatar seçerek giriş yapabilir veya kayıt olabilirsiniz.
+- **Chat Ekranı**: Sol tarafta grup listesi, ortada mesajlar ve sağ tarafta online kullanıcılar listesi bulunmaktadır. Mesaj yazabilir ve farklı gruplarda mesajlaşabilirsiniz.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notlar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Backend olarak `Socket.io` kullanılmıştır. Backend kodları `server.js` dosyasında bulunmaktadır.
+- Kullanıcı adı ve avatar bilgileri, API üzerinde `mockAPI` kullanılarak saklanmaktadır (`axios` ile iletişim sağlanmaktadır).
+- Her kullanıcı için farklı bir avatar seçebilir ve gruplar arasında geçiş yapabilirsiniz.
 
-### Code Splitting
+## Katkılar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Katkıda bulunmak veya sorun bildirmek için lütfen [issues](https://github.com/mertyilmaz5/chat-app/issues) sayfasını ziyaret edin.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Uygulama geliştirme süreci hakkında detaylı bilgi almak için lütfen projenin kodlarına ve `server.js` dosyasına göz atın. Herhangi bir sorunuz veya geri bildiriminiz varsa lütfen bana bildirin!
+````

@@ -1,0 +1,129 @@
+/* Chat Ekranı Stilleri */
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.group-list {
+  width: 220px; /* Grup listesi genişliği artırıldı */
+  background-color: #f0f0f0; /* Grup listesi arka plan rengi */
+  padding: 24px; /* Padding artırıldı */
+  border-right: 1px solid #cccccc;
+}
+
+.group-item {
+  padding: 12px; /* Padding artırıldı */
+  margin-bottom: 12px; /* Aralıklar artırıldı */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.group-item:hover {
+  background-color: #e0e0e0; /* Grup öğesi üzerine gelindiğinde arka plan rengi */
+}
+
+.group-item.active {
+  font-weight: bold;
+  background-color: #ffffff; /* Seçili grup öğesi arka plan rengi */
+}
+
+.chat-window {
+  flex: 1;
+  padding: 24px; /* Padding artırıldı */
+  overflow-y: auto;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* Aralıklar artırıldı */
+  padding: 12px; /* Padding artırıldı */
+  border-radius: 8px;
+}
+
+.message-avatar {
+  width: 36px; /* Avatar boyutu artırıldı */
+  height: 36px; /* Avatar boyutu artırıldı */
+  border-radius: 50%;
+  margin-right: 12px; /* Aralık artırıldı */
+}
+
+.message-user {
+  font-weight: bold;
+  margin-right: 12px; /* Aralık artırıldı */
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 12px; /* Padding artırıldı */
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.message-input button {
+  margin-left: 12px; /* Aralık artırıldı */
+  padding: 12px 24px; /* Padding artırıldı */
+  font-size: 16px;
+  background-color: #007bff; /* Gönder butonu arka plan rengi */
+  color: #ffffff; /* Gönder butonu yazı rengi */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.message-input button:hover {
+  background-color: #0056b3; /* Gönder butonu üzerine gelindiğinde arka plan rengi */
+}
+
+.online-users {
+  width: 220px; /* Online kullanıcılar listesi genişliği artırıldı */
+  padding: 24px; /* Padding artırıldı */
+  background-color: #f0f0f0; /* Online kullanıcılar listesi arka plan rengi */
+  border-left: 1px solid #cccccc;
+}
+
+.online-users h3 {
+  margin-bottom: 12px; /* Aralık artırıldı */
+  font-size: 18px;
+  color: #333333; /* Başlık rengi */
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 12px; /* Padding artırıldı */
+  margin-bottom: 12px; /* Aralık artırıldı */
+  cursor: pointer;
+}
+
+.user-item.current-user {
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 36px; /* Avatar boyutu artırıldı */
+  height: 36px; /* Avatar boyutu artırıldı */
+  border-radius: 50%;
+  margin-right: 12px; /* Aralık artırıldı */
+}
