@@ -36,29 +36,37 @@ Projede aşağıdaki ana dosyalar ve klasörler bulunmaktadır:
    git clone https://github.com/mertyilmaz5/rt-chat-app.git
    ```
 
-3. Bağımlılıkları yükleyin (Frontend ve Backend için ayrı ayrı):
+3. Bağımlılıkları yükleyin.
+   
+   Backend:
 
    ```bash
    cd backend
    npm install
    ```
+   
+   Frontend:
 
    ```bash
    npm install
    ```
 
-4. Projeyi başlatın (Frontend ve Backend için ayrı ayrı):
+4. Projeyi başlatın.
+
+   Backend:
 
    ```bash
    cd backend
    node server.js
    ```
+   
+   Frontend:
 
    ```bash
    npm start
    ```
 
-5. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görebilirsiniz.
+7. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görebilirsiniz.
 
 ## Kullanım
 
